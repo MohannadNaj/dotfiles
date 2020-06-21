@@ -1,1 +1,3 @@
-/Users/mohannadnajjar/.gitignore_global
+/node_modules
+.DS_STORE
+.phpunit.result.cache
