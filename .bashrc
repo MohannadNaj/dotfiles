@@ -23,17 +23,6 @@ fi
 
 }
 
-function gb
-{
-	git branch $*
-}
-
-
-function gba
-{
-  git branch -a $*
-}
-
 
 function gc
 {
