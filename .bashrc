@@ -22,6 +22,15 @@ else
 fi
 
 }
+# # Credits: https://tung-dang.github.io/create-a-symbolic-link-at-system-node-path-to-default-nvm-node-path
+function update_system_node_path {
+    SYSTEM_NODE_PATH="/usr/local/bin/node"
+    SYSTEM_NPM_PATH="/usr/local/bin/npm"
+    NVM_DEFAULT_NODE_PATH="$(nvm which default)"
+    NVM_DEFAULT_NPM_PATH="$(which npm)"
+    ln -Ffsv "$NVM_DEFAULT_NODE_PATH" "$SYSTEM_NODE_PATH"
+    ln -Ffsv "$NVM_DEFAULT_NPM_PATH" "$SYSTEM_NPM_PATH"
+}
 
 function gb
 {
