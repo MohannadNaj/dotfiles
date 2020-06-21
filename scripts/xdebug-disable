@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+$lines = explode("\n", file_get_contents(php_ini_loaded_file()));
+    
+$newLines = array_filter($lines, function ($line) { return strpos($line, 'xdebug.so') == 0; });
+
+$newContent = implode("\n", $newLines);
+
+file_put_contents(php_ini_loaded_file(), $newContent);
+
+echo "Xdeubg disabled in: " . php_ini_loaded_file();

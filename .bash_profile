@@ -26,6 +26,7 @@ export PATH="~/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/opt/php@7.3/bin:$PATH"
 export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/Code/dotfiles/scripts:$PATH"
 
 
 # >>> conda initialize >>>
