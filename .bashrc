@@ -32,17 +32,6 @@ function update_system_node_path {
     ln -Ffsv "$NVM_DEFAULT_NPM_PATH" "$SYSTEM_NPM_PATH"
 }
 
-function gb
-{
-	git branch $*
-}
-
-
-function gba
-{
-  git branch -a $*
-}
-
 
 function gc
 {
