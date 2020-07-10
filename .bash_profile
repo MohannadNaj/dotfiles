@@ -13,8 +13,8 @@ alias nau="git ls-files -z | xargs -0 git update-index --no-assume-unchanged"
 alias p='"vendor/bin/phpunit" --verbose --no-coverage $*'
 alias pf='"vendor/bin/phpunit" --verbose --no-coverage --filter $*'
 alias pc='"vendor/bin/phpunit" --verbose $*'
-alias wp='warun "(app|tests)/**/*.php" -- "vendor/bin/phpunit" --verbose --no-coverage $*'
-alias wpf='warun "(app|tests)/**/*.php" -- "vendor/bin/phpunit" --verbose --no-coverage --filter $*'
+alias wp='warun "(app|tests|database)/**/*.php" -- "vendor/bin/phpunit" --verbose --no-coverage $*'
+alias wpf='warun "(app|tests|database)/**/*.php" -- "vendor/bin/phpunit" --verbose --no-coverage --filter $*'
 
 alias cda='composer dump-autoload'
 alias gitlog='git log --pretty=oneline'
