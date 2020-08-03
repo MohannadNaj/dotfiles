@@ -32,12 +32,6 @@ function update_system_node_path {
     ln -Ffsv "$NVM_DEFAULT_NPM_PATH" "$SYSTEM_NPM_PATH"
 }
 
-
-function gc
-{
-	git checkout $*
-}
-
 function gf
 {
 Color_Off="\033[0m"
