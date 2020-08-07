@@ -1,1 +1,18 @@
-/usr/local/etc/gitconfig
+[push]
+	default = current
+
+[credential]
+	helper = osxkeychain
+
+[pager]
+	branch = false
+
+[core]
+	excludesfile = "~/.gitignore_global"
+    ignorecase = false
+
+
+[user]
+	name = "Mohannad Najjar"
+	email = "mohannadnaj@me.com"
+
