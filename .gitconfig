@@ -10,7 +10,7 @@
 [core]
 	excludesfile = "~/.gitignore_global"
     ignorecase = false
-
+    autocrlf = false
 
 [user]
 	name = "Mohannad Najjar"

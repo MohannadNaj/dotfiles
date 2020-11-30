@@ -68,10 +68,9 @@ iTerm2 > Preferences > Profiles > Default > Keys > * Presets.. > Natural Text Ed
 
 - PowerLevel9k Theme:
 ```
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 ```
-echo "source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
 ```
 
 - Terminal Font
@@ -122,4 +121,5 @@ ln -s /Code/dotfiles/.zshrc ~/.zshrc
 ln -s /Code/dotfiles/.zshrc.pre-oh-my-zsh ~/.zshrc.pre-oh-my-zsh
 
 ln -s /Code/dotfiles/.oh-my-zsh ~/.oh-my-zsh
+ln -s /Code/dotfiles/.hushlogin ~/.hushlogin
 ```

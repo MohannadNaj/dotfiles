@@ -16,6 +16,7 @@ alias pc='"vendor/bin/phpunit" --verbose $*'
 alias pcf='"vendor/bin/phpunit" --verbose --filter $*'
 alias wp='warun "(app|tests|database)/**/*.php" -- "vendor/bin/phpunit" --verbose --no-coverage $*'
 alias wpf='warun "(app|tests|database)/**/*.php" -- "vendor/bin/phpunit" --verbose --no-coverage --filter $*'
+alias wpcf='warun "(app|tests|database)/**/*.php" -- "vendor/bin/phpunit" --verbose --filter $*'
 
 alias cda='composer dump-autoload'
 alias gitlog='git log --pretty=oneline'
