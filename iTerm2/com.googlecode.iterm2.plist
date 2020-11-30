@@ -2318,7 +2318,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/mohannadnajjar/Code/dotfiles/iTerm2</string>
+	<string>/Code/dotfiles/iTerm2</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<false/>
 	<key>Print In Black And White</key>
