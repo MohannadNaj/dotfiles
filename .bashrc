@@ -41,7 +41,7 @@ search=$*
 
 color_options=""
 while [[ $# > 0 ]]; do
-    branches=`echo "$branches" | grep -i $*`
+    branches=`echo "$branches" | grep -i $* | grep --invert-match "*"`
     color_options="$color_options $*"
     shift
 done
