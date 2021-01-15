@@ -11,6 +11,7 @@ alias au="git ls-files -z | xargs -0 git update-index --assume-unchanged"
 alias nau="git ls-files -z | xargs -0 git update-index --no-assume-unchanged"
 
 alias p='"vendor/bin/phpunit" --verbose --no-coverage $*'
+alias phpunit='"vendor/bin/phpunit" --verbose --no-coverage $*'
 alias pf='"vendor/bin/phpunit" --verbose --no-coverage --filter $*'
 alias pc='"vendor/bin/phpunit" --verbose $*'
 alias pcf='"vendor/bin/phpunit" --verbose --filter $*'
@@ -24,7 +25,7 @@ alias cd..="cd .."
 alias locate-rebuild="/usr/libexec/locate.updatedb"
 
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="/Users/moh/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
