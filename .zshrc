@@ -123,5 +123,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Ctrl+Space
 bindkey "^@" history-search-multi-word
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
+    bindkey "\e[1;3C" forward-word
+    bindkey "\e[1;3D" backward-word
+fi
