@@ -26,8 +26,6 @@ alias locate-rebuild="/usr/libexec/locate.updatedb"
 
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/Users/moh/.composer/vendor/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/Code/dotfiles/scripts:$PATH"
 export PATH="/Library/PostgreSQL/12/bin:$PATH"
@@ -58,3 +56,5 @@ if [ -f '/Users/moh/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+launchctl setenv PATH $PATH
