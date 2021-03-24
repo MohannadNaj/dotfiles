@@ -29,6 +29,7 @@ export PATH="/Users/moh/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/Code/dotfiles/scripts:$PATH"
 export PATH="/Library/PostgreSQL/12/bin:$PATH"
+export PATH="./vendor/bin:$PATH"
 
 
 # >>> conda initialize >>>
