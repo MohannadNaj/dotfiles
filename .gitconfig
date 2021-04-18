@@ -16,3 +16,11 @@
 	name = "Mohannad Najjar"
 	email = "mohannadnaj@me.com"
 
+[pull]
+	rebase = true
+
+[fetch]
+	prune = true
+
+[diff]
+	colorMoved = zebra
