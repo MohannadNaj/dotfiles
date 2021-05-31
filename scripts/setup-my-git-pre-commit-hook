@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+PRECOMMIT_HOOK_PATH=".git/hooks/pre-commit"
+
+if [ -x $PRECOMMIT_HOOK_PATH ]; then
+    echo "This project already has a pre-commit hook.
+
+# You may want to back it up:
+    cp $PRECOMMIT_HOOK_PATH $(echo $PRECOMMIT_HOOK_PATH).$(date "+%Y-%m-%d").bak
+
+# Then you should remove it:
+    rm $PRECOMMIT_HOOK_PATH
+    " >&2 
+    exit;
+fi
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+cp $DIR/../.githooks/.pre-commit .git/hooks/pre-commit
+
+echo "[$PRECOMMIT_HOOK_PATH] File created with the following content:
+---------------
+"
+cat $PRECOMMIT_HOOK_PATH
